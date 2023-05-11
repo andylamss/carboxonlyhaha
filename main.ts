@@ -25,7 +25,11 @@ basic.forever(function () {
             basic.pause(1000)
         }
         if (上層計時器 == 0) {
-            music.playMelody("C D E F G A B C5 ", 2000)
+            // 揚聲器
+            pins.digitalWritePin(DigitalPin.P9, 1)
+        } else {
+            // 揚聲器
+            pins.digitalWritePin(DigitalPin.P9, 0)
         }
     } else if (pins.digitalReadPin(DigitalPin.P3) == 0) {
         basic.pause(10000)
@@ -50,7 +54,11 @@ basic.forever(function () {
             basic.pause(1000)
         }
         if (下層計時器 == 0) {
-            music.playMelody("C D E F G A B C5 ", 2000)
+            // 揚聲器
+            pins.digitalWritePin(DigitalPin.P9, 1)
+        } else {
+            // 揚聲器
+            pins.digitalWritePin(DigitalPin.P9, 0)
         }
     } else if (pins.digitalReadPin(DigitalPin.P5) == 0) {
         basic.pause(10000)
