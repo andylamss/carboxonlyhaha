@@ -5,7 +5,8 @@
         "core": "*",
         "microphone": "*",
         "servo": "*",
-        "bluetooth": "*"
+        "bluetooth": "*",
+        "BlockyTalky-BLE": "github:laboratoryforplayfulcomputation/pxt-blockytalkyble#v0.0.21"
     },
     "files": [
         "main.blocks",
